@@ -1,0 +1,160 @@
+:root {
+  --main-btn-bg-lightgray: rgb(233, 233, 233);
+  --main-btn-bg-lightgray-hover: rgb(211, 211, 211);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.icon.menu {
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 8px;
+
+  &:hover {
+    background-color: var(--main-btn-bg-lightgray-hover);
+  }
+}
+
+.main-btn {
+  background-color: var(--main-btn-bg-lightgray);
+  border: none;
+
+  &:hover {
+    background-color: var(--main-btn-bg-lightgray-hover);
+    cursor: pointer;
+  }
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  height: 56px;
+
+  .header-start,
+  .header-center,
+  .header-end {
+    display: flex;
+    align-items: center;
+    flex: 1 1 0;
+  }
+  .header-start {
+    gap: 4px;
+  }
+
+  .header-center {
+    flex: 0 1 732px;
+  }
+
+  .header-end {
+    justify-content: end;
+    gap: 8px;
+  }
+}
+
+.logo-img {
+  width: 120px;
+}
+
+.search-bar {
+  margin-right: 16px;
+  flex: 1;
+
+  .search-border {
+    border: 1px solid var(--main-btn-bg-lightgray);
+    border-radius: 24px 0 0 24px;
+    padding: 6px 10px;
+    gap: 8px;
+    flex: 1;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+
+  .search-btn {
+    border-radius: 0 24px 24px 0;
+    height: 40px;
+    width: 64px;
+  }
+}
+
+.search-bar,
+.search-border {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  width: 100%;
+}
+
+.search-show {
+  position: absolute;
+  left: -24px;
+  opacity: 0;
+}
+
+.search-border:focus-within {
+  border: 1px solid rgb(0, 110, 255);
+  padding-left: 48px;
+
+  .search-show {
+    left: 6px;
+    opacity: 1;
+  }
+}
+
+.mic-btn {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  margin-right: 16px;
+}
+
+.more-btn {
+  background-color: transparent;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:active {
+    background-color: var(--main-btn-bg-lightgray-hover);
+  }
+}
+
+.signin-btn {
+  color: rgb(0, 110, 255);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid var(--main-btn-bg-lightgray);
+  background-color: transparent;
+  height: 36px;
+  padding: 0 12px;
+  border-radius: 24px;
+  font-weight: 600;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgb(224, 240, 255);
+  }
+}

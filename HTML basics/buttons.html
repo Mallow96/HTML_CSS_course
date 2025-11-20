@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>L2: CSS basics</title>
+    <style>
+      .sub-btn {
+        background-color: rgb(211, 1, 1);
+        color: white;
+        border: none;
+        padding: 10px 16px;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-right: 8px;
+        transition: opacity 0.3s;
+      }
+
+      .sub-btn:hover {
+        opacity: 0.7;
+      }
+
+      .sub-btn:active {
+        opacity: 0.4;
+      }
+
+      .join-btn {
+        background-color: white;
+        border: 1px solid rgb(34, 147, 246);
+        color: rgb(34, 147, 246);
+        padding: 8px 16px;
+        border-radius: 2px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s, opacity 0.3s;
+      }
+
+      .join-btn:hover {
+        background-color: rgb(34, 147, 246);
+        color: white;
+      }
+
+      .join-btn:active {
+        opacity: 0.7;
+      }
+
+      .twt-btn {
+        background-color: rgb(0, 162, 255);
+        border: none;
+        color: white;
+        padding: 8px 16px;
+        border-radius: 18px;
+        font-weight: bold;
+        font-size: 16px;
+        cursor: pointer;
+        margin-left: 8px;
+        transition: box-shadow 0.3s, opacity 0.3s;
+      }
+
+      .twt-btn:hover {
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="sub-btn">SUBSCRIBE</button>
+    <button class="join-btn">JOIN</button>
+    <button class="twt-btn">Tweet</button>
+  </body>
+</html>
