@@ -161,8 +161,12 @@ header {
   }
 }
 
+.content {
+  display: flex;
+  gap: 16px;
+}
+
 aside {
-  width: 240px;
   padding: 16px 0;
   box-sizing: border-box;
   font-size: 14px;
@@ -172,6 +176,7 @@ aside {
   overflow: hidden;
   overflow-y: auto;
   height: 100vh;
+  flex: 0 0 240px;
 }
 
 .aside-tabs {
@@ -252,4 +257,35 @@ h3.tab-text {
     color: #606060;
     font-weight: 500;
   }
+}
+
+main {
+  flex: 1;
+  padding: 16px;
+  width: 100%;
+}
+
+.top-tabs {
+  display: flex;
+  gap: 12px;
+  padding: 16px 0;
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+.top-tab-btn {
+  background-color: #f2f2f2;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 8px;
+  color: #000;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.top-tab-btn.selected {
+  background-color: #000;
+  color: #fff;
 }
