@@ -1,6 +1,8 @@
 :root {
   --main-btn-bg-lightgray: rgb(233, 233, 233);
   --main-btn-bg-lightgray-hover: rgb(211, 211, 211);
+
+  font-family: Roboto;
 }
 
 * {
@@ -39,8 +41,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 16px;
   height: 56px;
+  padding: 0 16px;
 
   .header-start,
   .header-center,
