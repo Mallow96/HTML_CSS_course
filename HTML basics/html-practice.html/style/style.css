@@ -393,6 +393,12 @@ main {
   color: #606060;
 }
 
+.channel-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .short-head {
   display: flex;
   align-items: center;
