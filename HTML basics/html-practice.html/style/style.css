@@ -43,6 +43,11 @@ header {
   justify-content: space-between;
   height: 56px;
   padding: 0 16px;
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 100;
 
   .header-start,
   .header-center,
@@ -167,7 +172,16 @@ header {
 }
 
 aside {
-  padding: 16px 0;
+  flex: 0 0 240px;
+  height: calc(100vh - 56px);
+  overflow-x: auto;
+  padding-top: 16px;
+  position: sticky;
+  top: 56px;
+}
+
+.aside-full {
+  padding: 0;
   box-sizing: border-box;
   font-size: 14px;
   display: flex;
@@ -175,8 +189,8 @@ aside {
   gap: 24px;
   overflow: hidden;
   overflow-y: auto;
-  height: 100vh;
-  flex: 0 0 240px;
+  display: flex;
+  flex-direction: column;
 }
 
 .aside-tabs {
@@ -263,7 +277,7 @@ main {
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding: 16px;
+  padding: 0 16px 16px 16px;
   width: 100%;
   min-width: 0;
 }
@@ -272,8 +286,11 @@ main {
   display: flex;
   gap: 12px;
   padding: 16px 0;
-  overflow: hidden;
-  overflow-x: auto;
+
+  position: sticky;
+  top: 56px;
+  background-color: #fff;
+  z-index: 100;
 }
 
 .top-tab-btn {
@@ -436,4 +453,13 @@ main {
 .shorts-thumb {
   border-radius: 12px;
   overflow: hidden;
+}
+
+.videos-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 1312px) {
 }
