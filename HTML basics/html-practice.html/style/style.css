@@ -373,7 +373,8 @@ main {
   min-width: 0;
 }
 
-.video-title {
+.video-title,
+.shorts-title {
   font-size: 15px;
   font-weight: 500;
   line-height: 1.2;
@@ -388,7 +389,8 @@ main {
 }
 
 .channel-name,
-.video-stats {
+.video-stats,
+.shorts-views {
   font-size: 13px;
   color: #606060;
 }
@@ -399,10 +401,39 @@ main {
   text-overflow: ellipsis;
 }
 
+.shorts-row {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
 .short-head {
   display: flex;
   align-items: center;
   gap: 8px;
   font-weight: 500;
   margin-bottom: 12px;
+}
+
+.shorts-container {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+  min-width: 0;
+  padding-bottom: 8px;
+}
+
+.shorts-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.shorts-thumb {
+  border-radius: 12px;
+  overflow: hidden;
 }
